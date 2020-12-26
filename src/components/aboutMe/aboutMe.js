@@ -4,7 +4,7 @@ import {Col, Row} from "react-bootstrap";
 const AboutMe = () => {
     return (
         <section>
-            <h1 className='text-center mb-5'>About me</h1>
+            <h1 className='text-center mb-5 mt-5'>About me</h1>
             <p>I like to tell stories. I imagine that my pen is like a magic wand, and I can use words to change
                 things.</p>
             <p>Sometimes I write stories that make people think. Other times&nbsp;I write things that make people
@@ -28,8 +28,10 @@ const AboutMe = () => {
                 <Col sm={4}>
                     <div className="about-info">
                         <div className="float-left"><p>Email</p><p>Likes</p><p>Dislikes</p></div>
-                        <div className="float-left"><p>: stefanie@stefanieellis.com </p><p>: The color pink. </p><p>:
-                            Cauliflower and grumpy people. </p></div>
+                        <div className="float-left">
+                            <p>: stefanie@stefanieellis.com </p>
+                            <p>: The color pink. </p>
+                            <p>: Cauliflower and grumpy people. </p></div>
                         <p className="about-signature">Stefanie Ellis</p>
                     </div>
                 </Col>
@@ -39,11 +41,11 @@ const AboutMe = () => {
                         <div className="about-extra-icon-style2">
                             <ul>
                                 <li><p><i className="fa fa-smile-o"/><br/><span>Nice People</span></p></li>
-                                <li><p><i className="icon-lightbulb"/><br/><span>Fearless Ideas</span></p></li>
-                                <li><p><i className="icon-angellist"/><br/><span>Forward Thinkers</span></p></li>
+                                <li><p><i className="fa fa-lightbulb-o"/><br/><span>Fearless Ideas</span></p></li>
+                                <li><p><i className="fa fa-thumbs-up"/><br/><span>Forward Thinkers</span></p></li>
                                 <li><p><i className="fa fa-plane"/><br/><span>Travel</span></p></li>
                                 <li><p><i className="fa fa-anchor"/><br/><span>Mermaids</span></p></li>
-                                <li><p><i className="icon-fast-food"/><br/><span><span>Food</span></span></p></li>
+                                <li><p><i className="fa fa-cutlery"/><br/><span><span>Food</span></span></p></li>
                             </ul>
                         </div>
                     </div>
