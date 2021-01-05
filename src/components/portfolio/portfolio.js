@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import IsoTopeGrid from "react-isotope";
-import {ToggleButton, ToggleButtonGroup} from "react-bootstrap";
+import {ButtonGroup, Container, Row, ToggleButton} from "react-bootstrap";
+import ProfileCard from "../general/profileCard";
 
 
 const filtersDefault = [
@@ -14,59 +15,31 @@ const filtersDefault = [
 const cardsLayout = [
     {
         "id": "a",
-        "row": 0,
-        "col": 0,
-        "w": 1,
-        "h": 1,
         "filter": ["test", "chart"]
     },
     {
         "id": "b",
-        "row": 0,
-        "col": 1,
-        "w": 1,
-        "h": 1,
-        "filter": ["test1", "tile"]
+        "filter": ["test1", "tile", "test"]
     },
     {
         "id": "c",
-        "row": 0,
-        "col": 3,
-        "w": 1,
-        "h": 1,
         "filter": ["test", "chart"]
     },
     {
         "id": "d",
-        "row": 1,
-        "col": 0,
-        "w": 1,
-        "h": 1,
         "filter": ["test1", "tile"]
     },
     {
         "id": "e",
-        "row": 1,
-        "col": 1,
-        "w": 1,
-        "h": 1,
         "filter": ["test", "tile"]
     },
     {
         "id": "f",
-        "row": 1,
-        "col": 2,
-        "w": 1,
-        "h": 1,
         "filter": ["test1", "chart"]
     },
     {
         "id": "h",
-        "row": 2,
-        "col": 0,
-        "w": 1,
-        "h": 1,
-        "filter": ["test1", "chart"]
+        "filter": ["test1"]
     }
 ];
 
@@ -76,35 +49,53 @@ const Portfolio = (props) => {
     const [filters, updateFilters] = useState(filtersDefault);
 
     // Filter change handler
-    const onFilter = event => {
-        const {
-            target: {value, checked}
-        } = event;
-
-        updateFilters(value);
+    const onFilter = e => {
+        updateFilters(
+            filters.map(f => {
+                if (f.label === e.currentTarget.value) {
+                    return {
+                        ...f,
+                        isChecked: true
+                    };
+                } else {
+                    return {
+                        ...f,
+                        isChecked: false
+                    };
+                }
+            }))
     };
 
     return (
         <section>
             <h1 className='text-center mb-5 mt-5'>Portfolio</h1>
-            <ToggleButtonGroup type="checkbox" value={filters} onChange={onFilter}>
-                {filters.map(f => (
-                    <ToggleButton key={`${f.label}_key`} value={f.label} value={1}>{f.label}</ToggleButton>
-                ))}
-            </ToggleButtonGroup>
-            <IsoTopeGrid
-                gridLayout={cardsLayout} // gridlayout of cards
-                noOfCols={3} // number of columns show in one row
-                unitWidth={200} // card width of 1 unit
-                unitHeight={100} // card height of 1 unit
-                filters={filters} // list of selected filters
-            >
-                {cardsLayout.map(card => (
-                    <div key={card.id} className={card.filter[0]}>
-                        {card.id}
-                    </div>
-                ))}
-            </IsoTopeGrid>
+            <Row>
+                <ButtonGroup toggle className='m-auto'>
+                    {filters.map(f => (
+                        <ToggleButton
+                            className='mr-2'
+                            checked={f.isChecked}
+                            onChange={onFilter}
+                            key={`${f.label}_key`}
+                            value={f.label}
+                            type="radio"
+                        >{f.label}</ToggleButton>
+                    ))}
+                </ButtonGroup>
+            </Row>
+            <Container>
+                <IsoTopeGrid
+                    gridLayout={cardsLayout} // gridlayout of cards
+                    filters={filters} // list of selected filters
+                    noOfCols={3}
+                    unitHeight={501} // card height of 1 unit
+                    unitWidth={300}
+                >
+                    {cardsLayout.map(card => (
+                        <ProfileCard key={card.id}/>
+                    ))}
+                </IsoTopeGrid>
+            </Container>
         </section>
     )
 }

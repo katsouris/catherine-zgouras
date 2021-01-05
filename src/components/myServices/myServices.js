@@ -3,7 +3,7 @@ import {Col, Row} from "react-bootstrap";
 
 const MyServices = () => {
     return (
-        <section>
+        <section id={`#my-services`}>
             <h2 className='text-center mb-5 mt-5'>
                 My Services </h2>
             <p>

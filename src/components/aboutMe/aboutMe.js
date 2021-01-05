@@ -3,22 +3,9 @@ import {Col, Row} from "react-bootstrap";
 
 const AboutMe = () => {
     return (
-        <section>
+        <section id={`#about-me`}>
             <h1 className='text-center mb-5 mt-5'>About me</h1>
-            <p>I like to tell stories. I imagine that my pen is like a magic wand, and I can use words to change
-                things.</p>
-            <p>Sometimes I write stories that make people think. Other times&nbsp;I write things that make people
-                hungry. Often,&nbsp;I write things that make people cry. On a good day, I can do all three at the same
-                time!</p>
-            <p>I have written for <em>Saveur</em>, <em>Eating Well</em>, <em>The Washington
-                Post</em>, <em>Seattle</em> magazine, <em>VegNews</em>,&nbsp;<em>USA Today</em>, <em>The Seattle
-                Times</em>, <em>Sip Northwest</em>, <em>Northwest Travel &amp; Life</em>, <em>The
-                Guardian</em>, <em>Paste</em>, the <em>St. Louis Post-Dispatch</em>, <em>St. Louis</em> magazine and
-                more.</p>
-            <p>My areas of interest include Filipino, Icelandic and Bosnian cuisine, and pastry from around the world.
-                I’m especially interested in cultures that forage for what many of us may consider odd or easily
-                discarded here in the U.S. I also love vegan and sustainable, organic cuisine and related topics such as
-                composting and farming.</p>
+            <p>An disciplined and creative editor since 2005, I love engaging with the projects I work on, helping the writer produce a polished piece of art without changing or modifying their voice.  I am a curious and proactive editor, passionate about any publishing project, no matter how big or small. I also specialise in ELT - developing, editing, processing and writing. Get in touch and let's discuss your needs over a cup of tea or coffee</p>
             <Row>
                 <Col sm={4}>
                     <img
