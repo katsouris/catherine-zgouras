@@ -7,7 +7,7 @@ const ScrollHandler = ({ location }) => {
         const element = document.getElementById(location.hash);
 
         setTimeout(() => {
-            console.log(element.offsetTop)
+
             window.scrollTo({
                 behavior: element ? "smooth" : "auto",
                 top: element ? element.offsetTop - 122 : 0

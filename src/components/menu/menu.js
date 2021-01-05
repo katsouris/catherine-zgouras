@@ -13,7 +13,7 @@ const Menu = () => {
             setPosition(menuRef.current.offsetTop - window.pageYOffset)
         }
     };
-    console.log(position)
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, {passive: true});
 
