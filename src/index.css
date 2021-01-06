@@ -412,6 +412,10 @@ a.bt-timeline{
     background-color: var(--dark-primary);
 }
 
+.overlay-resume {
+    padding-bottom: 25px;
+}
+
 .single {
     font-size: 20px;
     line-height: 28px;

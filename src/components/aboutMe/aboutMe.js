@@ -1,20 +1,29 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
+import logo from '../../assets/photos/stefanie.jpg';
 
 const AboutMe = () => {
     return (
         <section id={`#about-me`}>
             <h1 className='text-center mb-5 mt-5'>About me</h1>
-            <p>An disciplined and creative editor since 2005, I love engaging with the projects I work on, helping the writer produce a polished piece of art without changing or modifying their voice.  I am a curious and proactive editor, passionate about any publishing project, no matter how big or small. I also specialise in ELT - developing, editing, processing and writing. Get in touch and let's discuss your needs over a cup of tea or coffee</p>
+            <p>An disciplined and creative editor since 2005, I love engaging with the projects I work on, helping the
+                writer produce a polished piece of art without changing or modifying their voice. I am a curious and
+                proactive editor, passionate about any publishing project, no matter how big or small. I also specialise
+                in ELT - developing, editing, processing and writing. Get in touch and let's discuss your needs over a
+                cup of tea or coffee</p>
             <Row>
                 <Col sm={4}>
                     <img
-                        src="http://www.stefanieellis.com/wp-content/uploads/2015/12/Screen-Shot-2015-12-17-at-10.13.00-PM.jpg"
+                        src={logo}
                         className="img-responsive" alt="STEFANIE ELLIS"/>
                 </Col>
                 <Col sm={4}>
                     <div className="about-info">
-                        <div className="float-left"><p>Email</p><p>Likes</p><p>Dislikes</p></div>
+                        <div className="float-left">
+                            <p>Email</p>
+                            <p>Likes</p>
+                            <p>Dislikes</p>
+                        </div>
                         <div className="float-left">
                             <p>: stefanie@stefanieellis.com </p>
                             <p>: The color pink. </p>
