@@ -707,7 +707,7 @@ a.bt-timeline{
 
 @media (max-width: 480px) {
     section h1,section h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .loader{
         font-size: 25vw;
