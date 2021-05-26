@@ -60,7 +60,6 @@ const Contact = ({baseUrl}) => {
                             </ul>
                         </Col>
                         <Col md={6}>
-                            <h4>SEND ME A NOTE</h4>
                             <div role="form" className="wpcf7" id="wpcf7-f4-p38-o1" lang="en-US" dir="ltr">
                                 <div className="screen-reader-response">
                                     <p role="status" aria-live="polite"
