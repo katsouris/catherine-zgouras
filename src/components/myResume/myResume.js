@@ -4,54 +4,54 @@ import {Col, Row} from "react-bootstrap";
 const timeline = [
     {
         position: "left",
-        title: "Associate Vice President, Marketing",
-        subtitle: "Girl Scouts of Western Washington",
-        duration: "December 2019-Present",
+        title: "ELT Editorial Specialist",
+        subtitle: "Editor / Writer / Consultant",
+        duration: "2005 - Present",
     },
     {
         position: "right",
-        title: "DIRECTOR OF MARKETING &amp; COMMUNICATIONS",
-        subtitle: "Girl Scouts of Western Washington",
-        duration: "May 2017-December 2019",
+        title: "Fiction Editorial Services",
+        // subtitle: "Girl Scouts of Western Washington",
+        duration: "2005 – Present",
     },
     {
         position: "left",
-        title: "PUBLIC RELATIONS DIRECTOR",
-        subtitle: "Girl Scouts of Western Washington",
-        duration: "December 2019-Present",
+        title: "Teacher Training",
+        // subtitle: "Girl Scouts of Western Washington",
+        duration: "2000 – Present",
     },
     {
         position: "right",
-        title: "WRITING SPECIALIST",
-        subtitle: "Girl Scouts of Western Washington",
-        duration: "2000 - Present",
+        title: "Teacher Consultancy",
+        // subtitle: "Girl Scouts of Western Washington",
+        duration: "2010 – Present",
     },
     {
         position: "left",
-        title: "FREELANCE WRITER",
-        subtitle: "Girl Scouts of Western Washington",
-        duration: "September 2008 - July 2011",
+        title: "Foreign Language School Owner",
+        // subtitle: "Girl Scouts of Western Washington",
+        duration: "1991-2010",
     },
-    {
-        position: "right",
-        title: "EDITOR",
-        subtitle: "St. Louis University School of Law",
-        duration: "October 2002 – September 2007",
-    }
+    // {
+    //     position: "right",
+    //     title: "EDITOR",
+    //     subtitle: "St. Louis University School of Law",
+    //     duration: "October 2002 – September 2007",
+    // }
 ];
 
 const education = [
     {
         position: "left",
-        title: "Certificat de Patisserie - Mention Bien",
-        subtitle: "De L'Ecole Le Cordon Bleu",
-        duration: "2007-2008",
+        title: "University of Sydney",
+        subtitle: "Diploma of Education",
+        duration: "1989-1990",
     },
     {
         position: "right",
-        title: "B.A. in Education with Secondary Certification",
-        subtitle: "University of Missouri-St. Louis",
-        duration: "1997-2000",
+        title: "University of Sydney",
+        subtitle: "B.A. Hons.",
+        duration: "1986-1990",
     },
 ];
 
@@ -68,7 +68,7 @@ const MyResume = () => {
                 <Col md={12}>
                     <div className="timeline">
                         <div className="timeline-category exp-category">
-                            <a className="large bt-timeline"> Experiences </a>
+                            <a className="large bt-timeline"> Experience </a>
                             <div className="timeline-category-icon">
                                 <div className="iconspace"><i className=" fa fa-folder-open "/></div>
                             </div>

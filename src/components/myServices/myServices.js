@@ -13,21 +13,27 @@ const MyServices = () => {
                     <div className="service-box">
                         <i className="service-icon fa fa-edit"/>
                         <div className="service-content">
-                            <h3>Editing</h3>
+                            <h3>ELT Editing</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className="service-box">
                         <i className="service-icon fa fa-pencil"/>
                         <div className="service-content">
-                            <h3>Copywriting &amp; Profiles</h3>
+                            <h3>ELT Writing</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className="service-box">
-                        <i className="service-icon fa fa-cutlery"/>
+                        <i className="service-icon fa fa-graduation-cap"/>
                         <div className="service-content">
-                            <h3>Food Writing &amp; Recipe Development</h3>
+                            <h3>ELT Graded Readers</h3>
+                            <p></p>
+                        </div>
+                    </div><div className="service-box">
+                        <i className="service-icon fa fa-users"/>
+                        <div className="service-content">
+                            <h3>ELT Consultancy</h3>
                             <p></p>
                         </div>
                     </div>
@@ -35,23 +41,23 @@ const MyServices = () => {
                 <Col className='float-right' md={6}>
 
                     <div className="service-box">
-                        <i className="service-icon fa fa-qq"/>
+                        <i className="service-icon fa fa-comment"/>
                         <div className="service-content">
-                            <h3>Ghost Writing</h3>
+                            <h3>Teacher Development</h3>
                             <p/>
                         </div>
                     </div>
                     <div className="service-box">
                         <i className="service-icon fa fa-microphone"/>
                         <div className="service-content">
-                            <h3>PR Consultation</h3>
+                            <h3>Teacher Consultant</h3>
                             <p></p>
                         </div>
                     </div>
                     <div className="service-box">
                         <i className="service-icon fa fa-bullseye"/>
                         <div className="service-content">
-                            <h3>Strategy &amp; Campaign Development</h3>
+                            <h3>Fiction Editing</h3>
                             <p></p>
                         </div>
                     </div>

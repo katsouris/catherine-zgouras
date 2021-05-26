@@ -1,7 +1,7 @@
 :root{
-    --dark-primary:#302538;
-    --medium-primary:#4c4057;
-    --light-primary:#675284;
+    --dark-primary:#1B4353;
+    --medium-primary:#5DA399;
+    --light-primary:#95B8D1;
 }
 
 
@@ -61,6 +61,7 @@ ul, ol {
     float: left;
     margin: 0 10px 10px 0;
     width: 100px;
+    height: 120px;
 }
 
 .about-extra-icon-style2 ul li p {
@@ -95,7 +96,7 @@ section h1,section h2 {
     padding-bottom: 50px;
 }
 .float-right .service-icon {
-    background-color: #9d6fc8;
+    background-color: #9AACA0;
     float: left;
     width: 85px;
     height: 85px;
@@ -108,7 +109,7 @@ section h1,section h2 {
 }
 
 .float-left .service-icon {
-    background-color: #9d6fc8;
+    background-color: #9AACA0;
     float: right;
     width: 85px;
     height: 85px;
@@ -232,14 +233,14 @@ section h1,section h2 {
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    background-color: #dbdde5;
+    background-color: #9AACA0;
     padding: 25px;
     text-transform: uppercase;
     letter-spacing: 0;
 }
 
 a.bt-timeline{
-    color: var(--medium-primary);
+    color: white;
 }
 
 .timeline-category-icon {
@@ -357,7 +358,7 @@ a.bt-timeline{
     width: 5px;
     height: 5px;
     line-height: 1;
-    background-color: var(--dark-primary);
+    background-color: white;
     left: 3px;
     margin-top: 12px;
     border-radius: 50%;
@@ -409,7 +410,7 @@ a.bt-timeline{
 }
 
 .parallax-overlay-4{
-    background-color: var(--dark-primary);
+    background-color: #1C221F;
 }
 
 .overlay-resume {
@@ -441,7 +442,7 @@ a.bt-timeline{
 }
 
 .count .cicon {
-    color: #9d6fc8;
+    color: #F6C928;
 }
 
 .count .sum {
@@ -468,7 +469,7 @@ a.bt-timeline{
 .get_in li i {
     border-radius: 25px;
     background: #FFFFFF;
-    color: #9d6fc8;
+    color: #1C221F;
     height: 42px;
     line-height: 20px;
     margin-bottom: 10px;
@@ -485,7 +486,6 @@ a.bt-timeline{
 .wpcf7-form input[type="text"], .wpcf7-form input[type="password"], .wpcf7-form input[type="tel"], .wpcf7-form input[type="email"], .wpcf7-form input[type="url"], .wpcf7-form input[type="number"], .wpcf7-form input[type="date"], .wpcf7-form textarea, .wpcf7-form select {
     color: #999999;
     font-size: 14px;
-    text-transform: capitalize;
     height: 64px;
     padding: 18px 3%;
     background: none repeat scroll 0 0 #f2f2f2;
@@ -514,7 +514,7 @@ a.bt-timeline{
 }
 
 .wpcf7-form input[type="submit"] {
-    background-color: #9D6FC8;
+    background-color: #1C221F;
 }
 
 .wpcf7-form input[type="text"]:focus, .wpcf7-form input[type="password"]:focus, .wpcf7-form input[type="tel"]:focus, .wpcf7-form input[type="email"]:focus, .wpcf7-form input[type="url"]:focus, .wpcf7-form input[type="number"]:focus, .wpcf7-form input[type="date"]:focus, .wpcf7-form textarea:focus, .wpcf7-form select:focus {
@@ -542,7 +542,7 @@ a.bt-timeline{
 }
 
 .copyright a{
-    color: #9D6FC8;
+    color: #864EBC;
 }
 
 .footer-bottom .social {
@@ -582,6 +582,92 @@ a.bt-timeline{
 .footer-bottom .social li a.instagram {
     background-color: #3f729b;
 }
+.loader-wrapper{
+    height: 100vh;
+    width: 100%;
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 11vw;
+    font-family: "Tangerine", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+
+@keyframes reveal {
+    80%{
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+.parallax-overlay-5{
+    background-color:#789180;
+}
+.book {
+    display: inline-block;
+    width: 230px;
+    height: 390px;
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px 10px 0 10px;
+    vertical-align: top;
+    transition: height 1s;
+}
+
+
+.cover {
+    border: 2px solid gray;
+    height: 75%;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.book p {
+    margin-top: 12px;
+    font-size: 9px;
+}
+
+.book .author {
+    font-size: 10px;
+}
+@media (max-width: 941px) {
+    .container {
+        max-width: 700px;
+    }
+    .book {
+        margin: 49px;
+    }
+}
+@media (max-width: 730px) {
+    .book {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .cover {
+
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
 
 @media (max-width: 980px) {
     .about-info {
@@ -601,9 +687,11 @@ a.bt-timeline{
         margin-top: 0;
     }
     .timeline-post {
+        text-align: center;
         padding: 10px;
     }
     .timeline-post-edu {
+        text-align: center;
         padding: 10px;
     }
 
@@ -620,5 +708,8 @@ a.bt-timeline{
 @media (max-width: 480px) {
     section h1,section h2 {
         font-size: 40px;
+    }
+    .loader{
+        font-size: 25vw;
     }
 }
